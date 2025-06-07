@@ -21,7 +21,9 @@ export default function BrowseLayout({
           <NavigationLink href="/blog">Blog</NavigationLink>
         </div>
       </NavBar>
-      <div className="h-full flex pt-18">{children}</div>
+      <div className="h-full w-full flex flex-col items-center justify-center pt-18">
+        {children}
+      </div>
       {showSpotlight && (
         <SpotlightOverlay
           spotlightRadius={250}
