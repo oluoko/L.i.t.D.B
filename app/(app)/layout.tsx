@@ -26,8 +26,8 @@ export default function BrowseLayout({
       </div>
       {showSpotlight && (
         <SpotlightOverlay
-          spotlightRadius={250}
-          transitionOpacity={0.9}
+          spotlightRadius={200}
+          transitionOpacity={0.8}
           smoothEdge={true}
           invertOnDarkMode={true}
         />
