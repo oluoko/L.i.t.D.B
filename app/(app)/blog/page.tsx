@@ -1,23 +1,8 @@
-import FontManager from "@/components/font-manager";
-import { NavBar } from "@/components/nav-bar";
-import {
-  Heading,
-  NavigationLink,
-  Paragraph,
-  Quote,
-  StyledLink,
-} from "@/components/typography";
+import { Heading, Paragraph, Quote, StyledLink } from "@/components/typography";
 
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center h-screen ">
-      <NavBar>
-        <div className="flex items-center space-x-4">
-          <NavigationLink href="/">Home</NavigationLink>
-          <NavigationLink href="/about">About</NavigationLink>
-          <NavigationLink href="/contact">Contact</NavigationLink>
-        </div>
-      </NavBar>
       <h1 className="text-4xl font-black ">Light in the Dark Bible</h1>
       <div>
         <p className="text-lg mt-4">A simple Bible reading app</p>

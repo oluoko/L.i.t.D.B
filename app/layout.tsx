@@ -3,6 +3,7 @@ import Script from "next/script";
 import { fontVariables } from "@/lib/fonts";
 import "./globals.css";
 import { Providers } from "@/components/providers";
+import NextTopLoader from "nextjs-toploader";
 
 export const metadata: Metadata = {
   title: "L.i.t.D.B",
@@ -17,7 +18,8 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${fontVariables} antialiased`} suppressHydrationWarning>
-        <Providers>{children}</Providers>
+        <NextTopLoader color="#E11D48" showSpinner={false} />
+        <Providers>{children}</Providers>{" "}
         <Script
           id="reftagger-config"
           strategy="beforeInteractive"
