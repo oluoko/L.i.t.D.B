@@ -115,7 +115,7 @@ export default function SpotlightOverlay({
 
   return (
     <div
-      className={`fixed inset-0 pointer-events-none z-50 transition-colors duration-300 ${className}`}
+      className={`fixed inset-0 pointer-events-none z-99 transition-colors duration-300 ${className}`}
       style={{
         background: overlayColor,
         WebkitMask: createMaskGradient(),
